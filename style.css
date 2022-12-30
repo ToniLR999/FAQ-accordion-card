@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+
+    /* primary text */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    /* background gradient color */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    /* neutral text */
+    --very-dark-gravish-blue: hsl(237, 12%, 33%);
+    --dark-gravish-blue: hsl(240, 6%, 50%);
+
+    /* dividers */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+
+    /* body copy */
+    --font-size: 12px;
+
+
+}
+
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+html,body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: var(--font-size);
+    margin: 0;
+    background-image: linear-gradient(var(--soft-violet),var(--soft-blue));
+}
+
+.content{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.content::before{
+    background: url(./images/illustration-woman-online-mobile.svg) no-repeat;
+}
+
+.content::after{
+    background: url(./images/bg-pattern-mobile.svg) no-repeat;
+}
+
+.image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+#img-base{
+    position: absolute;
+    object-fit: contain;
+
+}
+
+#img-woman{
+    position: absolute;
+    left: 20%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#img-box{
+    position: absolute;
+    left: 20%;
+    object-fit: contain;
+}
+
+
+.content .data{
+    width: 50%;
+    padding: 5px;
+}
+
+.element{
+    border-bottom: 1px solid var(--dark-gravish-blue);
+    color: var(--very-dark-gravish-blue);
+}
+
+.element .element-title{
+    width: 100%;
+} 
+
+.element .info.active{
+    display: block;
+}
+
+
+.element .info{
+    display: none;
+    color: var(--dark-gravish-blue);
+}
