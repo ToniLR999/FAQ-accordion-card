@@ -131,11 +131,10 @@ html,body{
 }
 
 .data{
-    padding: 10px;
     display: block;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-left: 1rem;
     margin-top: 4rem;
     width: 350px;
 }
@@ -144,8 +143,8 @@ html,body{
 
 .element{
     border-bottom: 1px solid var(--dark-gravish-blue);
-    color: var(--very-dark-gravish-blue);
-    margin: 20px auto;
+    color: var(--dark-gravish-blue);
+    margin: 15px auto;
 }
 
 .question {
@@ -195,13 +194,14 @@ html,body{
 .element .element-title{
     color: var(--very-dark-gravish-blue);
     width: 100%;
-    font-size: var(--font-size);
+    font-size: 15px;
     outline: none;
     transition: 0.2s;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+
 } 
 
 .element.show-text .info{
@@ -253,6 +253,8 @@ html,body{
 
     .element{
         font-weight: 300;
+        margin: 5px auto;
+
     }
 
     .question {
